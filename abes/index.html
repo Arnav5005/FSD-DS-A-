@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="ABES home">
+        <img
+          src="https://www.abes.edu.in/myassets/dark.png"
+          alt="ABES Engineering College logo"
+        />
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#academics">Academics</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#campus">Campus</a>
+        <a href="#placements">Placements</a>
+        <a href="#research">Research</a>
+        <a href="#entrepreneurship">Entrepreneurship</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-kicker">Engineering College</p>
+          <h1>Welcome to ABES</h1>
+          <p class="hero-copy">
+            A campus experience shaped around academics, research, and student
+            life.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="glance-section"
+        id="glance"
+        aria-labelledby="glance-title"
+      >
+        <div class="glance-header">
+          <h2 id="glance-title">ABES at a Glance</h2>
+          <p>
+            For over two decades, ABES has firmly established itself in society
+            as epitome of outcome-focused learning. Its enduring reputation
+            embodies trust and value.
+          </p>
+        </div>
+
+        <div class="glance-divider" aria-hidden="true"></div>
+
+        <div class="glance-grid">
+          <article class="glance-item">
+            <span class="glance-value">Est. 2000</span>
+            <h3>Celebrating 26 Years Of Excellence</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">8090</span>
+            <h3>Students in Campus</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">24000+</span>
+            <h3>Alumni Worldwide</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">54</span>
+            <h3>Startups Incubated</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">60 LPA</span>
+            <h3>Highest Package in Placements 2025</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">1692</span>
+            <h3>Offers in Placement 2025</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">15.77 Acres</span>
+            <h3>Campus With All Modern Facilities</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">500+</span>
+            <h3>Recruiters</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">2690+</span>
+            <h3>Scopus Publication</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">375+</span>
+            <h3>Published Patents</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">9</span>
+            <h3>Granted Patents</h3>
+          </article>
+          <article class="glance-item">
+            <span class="glance-value">15 Lacs</span>
+            <h3>Consultancy Received in 2024-25</h3>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="footer">
+        <section class="footer-grid">
+          <div class="footer-column">
+            <h2>Mandatory Disclosures</h2>
+            <ul>
+              <li>Mandatory Disclosure</li>
+              <li>AICTE Approval</li>
+              <li>University Affiliation Letter</li>
+              <li>Education Verification</li>
+              <li>Audited Statement</li>
+              <li>Student's Request Form (SIS)</li>
+              <li>Academic Calendar</li>
+              <li>Barrier Free Environment Certificate</li>
+            </ul>
+          </div>
+
+          <div class="footer-column footer-address">
+            <h2>Address</h2>
+            <p>19th KM Stone</p>
+            <p>NH-09 Ghaziabad (UP)</p>
+            <p>PIN - 201009</p>
+            <p>Phone no. 01207135112</p>
+            <p>Email: info@abes.ac.in</p>
+            <div class="social-row" aria-label="Social links">
+              <span>f</span>
+              <span>ig</span>
+              <span>tw</span>
+              <span>in</span>
+              <span>yt</span>
+            </div>
+          </div>
+
+          <div class="footer-column footer-links">
+            <h2>Important Links</h2>
+            <ul>
+              <li>Turnitin</li>
+              <li>No-Dues Portal</li>
+              <li>Disclaimer</li>
+              <li>UAV</li>
+              <li>RTI</li>
+              <li>Academic Results</li>
+              <li>Admissions</li>
+              <li>Career</li>
+              <li>CETL (SIS)</li>
+              <li>Virtual Tour</li>
+              <li>Library</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="footer-bottom">
+          <img
+            src="https://www.abes.edu.in/myassets/dark.png"
+            alt="ABES Engineering College logo"
+          />
+          <p>All Rights Reserved. ABES Engineering College</p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const header = document.querySelector(".site-header");
+      const footer = document.querySelector(".site-footer");
+
+      let lastScrollY = window.scrollY;
+      let ticking = false;
+
+      const updateChromeVisibility = () => {
+        const currentScrollY = window.scrollY;
+        const scrollingDown =
+          currentScrollY > lastScrollY && currentScrollY > 24;
+
+        header.classList.toggle("is-hidden", scrollingDown);
+        footer.classList.toggle("is-hidden", scrollingDown);
+
+        lastScrollY = currentScrollY;
+        ticking = false;
+      };
+
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            window.requestAnimationFrame(updateChromeVisibility);
+            ticking = true;
+          }
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
+</html>
