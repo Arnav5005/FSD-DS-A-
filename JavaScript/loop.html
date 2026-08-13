@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // for(let i=1; i<=10; i++){
+        //     document.write("<br> abes college")
+        // }
+        let car=["Koenigsegg Jesko","BMW M4 competition","Apollo evo","Mercedez AMG one"]
+        // for(let i=0; i<3; i++){
+        //     document.write(car[i])
+        // }
+        // let text=" "
+        // for(let i=0; i<car.length; i++){
+        //     text+=car[i]+"<br>"
+        // }
+        // document.getElementById("demo").innerHTML=text
+
+        // let text=" "
+        // car.forEach(element => {
+        //     text+=element+"<br>"
+        // });
+        // document.getElementById("demo").innerHTML=text
+        let newTxt=" "
+        for (let i = 0; i < car.length; i++) {
+            if(i==1){
+                continue
+            }
+            newTxt+=car[i]+"<br>"
+        }
+        document.getElementById("demo").innerHTML=newTxt
+    </script>
+</body>
+</html>
