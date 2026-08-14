@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey;">
+
+    <script>
+
+        let student={
+            name:"xyz",
+            class:"B.Tech",
+            fee:100000
+        }
+
+        // document.write(student.class)
+        // document.write("<br>")
+        // document.write(student.name)
+        // document.write("<br>")
+        // document.write(student.fee)
+
+        for(let[key,value] of Object.entries(student)){
+            document.write(`${key}:${value} <br>`)
+        }
+
+        document.write("<br>")
+
+        for(let key in student){
+            document.write(`${key}:${student[key]} <br>`)
+        }
+
+        document.write("<br>")
+
+        document.write(student) // [object Object]
+
+        // The first object (lowercase): Represents the fundamental type/category in JavaScript, indicating that the value is a complex data type (an object) rather than a primitive (like a string or number).
+
+        // The second Object (capitalized): Indicates the specific constructor or internal type of that object (in this case, a standard plain JavaScript object built from Object)
+
+
+    </script>
+    
+</body>
+</html>
