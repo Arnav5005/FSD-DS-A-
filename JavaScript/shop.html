@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>tea</h3>
+    <input type="number" name="quantity" id="tea" placeholder="Enter quantity">
+    <h3>coffee</h3>
+    <input type="number" name="quantity" id="coffee" placeholder="Enter quantity">
+    <h3>sugar</h3>
+    <input type="number" name="quantity" id="sugar" placeholder="Enter quantity">
+    <h3>biscuit</h3>
+    <input type="number" name="quantity" id="biscuit" placeholder="Enter quantity">
+    <br>
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <script>
+        let shop={
+            "tea":450,
+            "coffee":600,
+            "sugar":700,
+            "biscuit":900
+        }
+        // let inp=prompt("Enter your product : ")
+        // let quant=Number(prompt("Enter the product quantity : "))
+        function calculate(){
+            let teaQuantity=Number(document.getElementById("tea").value) || 0;
+            let coffeeQuantity=Number(document.getElementById("coffee").value) || 0;
+            let sugarQuantity=Number(document.getElementById("sugar").value) || 0;
+            let biscuitQuantity=Number(document.getElementById("biscuit").value) || 0;
+            let sum=(shop.tea*teaQuantity)+
+                    (shop.coffee*coffeeQuantity)+
+                    (shop.sugar*sugarQuantity)+
+                    (shop.biscuit*biscuitQuantity);
+            alert(`your total amount for is : ${sum}`)
+        }
+        
+    </script>
+    
+</body>
+</html>
