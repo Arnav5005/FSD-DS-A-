@@ -27,6 +27,36 @@
         let hello=()=>{
             "hello"
         }
+
+        document.write("<br>")
+
+        let car=()=>{
+            return ["BMW i8 "," $4.5m",""]
+        }
+        let helicopter=()=>{
+            return ["Robinson R44 Raven II "," $550k",""]
+        }
+        let aeroplane=()=>{
+            return ["Boeing 747 "," $418m",""]
+        }
+
+        let item=prompt("Enter your item : ")
+
+        switch(item){
+            case "car":
+                document.write(car())
+                break;
+            case "helicopter":
+                document.write(helicopter())
+                break;
+            case "aeroplane":
+                document.write(aeroplane())
+                break;
+            default:
+                document.write("Invalid request")
+                break;
+        }
+        
     </script>
     
 </body>
