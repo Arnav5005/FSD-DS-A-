@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students=[
+                    {
+                    "name": "Rahul Sharma",
+                    "class": "B.Tech",
+                    "course": "Computer Science Engineering",
+                    "age": 20
+                    },
+                    {
+                    "name": "Priya Singh",
+                    "class": "B.Tech",
+                    "course": "Information Technology",
+                    "age": 21
+                    },
+                    {
+                    "name": "Aman Verma",
+                    "class": "MCA",
+                    "course": "Master of Computer Applications",
+                    "age": 23
+                    },
+                    {
+                    "name": "Neha Gupta",
+                    "class": "MCA",
+                    "course": "Master of Computer Applications",
+                    "age": 22
+                    },
+                    {
+                    "name": "Arjun Kumar",
+                    "class": "10th",
+                    "age": 15
+                    }
+                ]
+
+        const adult=students.filter((i)=>{
+            if(i.age>=18){
+                document.write(`${i.name} <br>`)
+            }
+        })
+        
+    </script>
+</body>
+</html>
