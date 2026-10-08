@@ -38,7 +38,7 @@ function Github() {
 }
 const App = () => {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: "24px"}}>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "24px"}>
       <BrowserRouter>
         <nav style={{ display: "flex", gap: "16px", marginBottom: "32px" }}>
           <Link to="/">HOME</Link>
